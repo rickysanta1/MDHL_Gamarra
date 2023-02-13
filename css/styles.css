@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+body {
+  background-color: rgb(209, 175, 226);
+}
+.container {
+  width: 100%;
+  display: inline-block;
+  background-image: url("/assets/hockey_1.jpg");
+  background-position: cover;
+  min-height: 100vh;
+}
+.container_contact {
+  width: 100%;
+  display: inline-block;
+  background-image: url("/assets/hockey_3.jpg");
+  background-size: cover;
+  min-height: 100vh;
+}
+.container_about {
+  width: 100%;
+  display: inline-block;
+  background-image: url("/assets/hockey_2.jpg");
+  background-size: cover;
+  min-height: 100vh;
+}
+.subtitle {
+  text-align: center;
+  background-color: rgb(75, 148, 225);
+  border: solid rgb(236, 73, 73);
+  border-top: 0rem;
+  border-style: ridge;
+  border-radius: 0 0 0.5rem 0.5rem;
+  padding: 0.5rem;
+}
+aside {
+  display: inline-block;
+  vertical-align: top;
+}
+
+article {
+  display: inline-block;
+}
+header {
+  border: 0.5rem solid rgb(236, 73, 73);
+  border-style: ridge;
+  border-radius: 0.5rem 0.5rem 0 0;
+  min-height: 50vh;
+  padding: 1rem;
+  background-image: url(/assets/design2_image1.jpg);
+  background-size: cover;
+  background-position: 0% 30%;
+}
+
+h1 {
+  vertical-align: top;
+  font-size: 2.5rem;
+  text-align: left;
+  margin: 1rem 0 0 2rem;
+}
+
+nav {
+  position: relative;
+  min-height: 5vh;
+  padding: 0.5rem;
+  position: absolute;
+  right: 10px;
+  margin-top: -30px;
+}
+.self {
+  background-color: rgb(233, 163, 163);
+  color: rgb(227, 244, 202);
+}
+nav a {
+  display: inline-block;
+  width: 8rem;
+  height: 3rem;
+  color: greenyellow;
+  background-color: rgb(236, 73, 73);
+  text-decoration: none;
+  border-radius: 0.5rem;
+  border: 0.2rem solid rgb(230, 18, 18);
+  text-align: center;
+  font-weight: bolder;
+  padding-top: 0.5rem;
+}
+
+a:hover {
+  background-color: rgb(233, 163, 163);
+  color: rgb(255, 255, 255);
+}
+
+a:active {
+  background-color: black;
+}
+
+main {
+  min-height: 80vh;
+  padding: 0.5rem;
+}
+
+article h2,
+h3 {
+  color: greenyellow;
+  margin: 1rem 0 0.5rem 0;
+}
+.about {
+  margin-left: 2rem;
+  vertical-align: top;
+  display: inline-block;
+  background-color: rgb(236, 73, 73);
+  border-radius: 1rem;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.358);
+
+  width: 80%;
+  padding: 1rem;
+}
+.contact {
+  margin: 2rem 0 1.5rem 2rem;
+  vertical-align: top;
+  display: inline-block;
+  background-color: rgb(236, 73, 73);
+  border-radius: 1rem;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.358);
+  width: 80vh;
+  padding: 1rem;
+}
+section {
+  vertical-align: top;
+  display: inline-block;
+  background-color: rgb(236, 73, 73);
+  width: 300px;
+  height: 200px;
+  border-radius: 1rem;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.358);
+  margin: 2rem 0 1.5rem 2rem;
+  padding: 0.4rem;
+}
+
+div p {
+  color: azure;
+}
+
+section:hover {
+  background-color: orange;
+}
+
+footer {
+  background-color: black;
+  height: 5vh;
+  padding: 1.5rem;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+}
