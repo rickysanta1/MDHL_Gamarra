@@ -36,12 +36,38 @@ body {
   border-style: ridge;
   border-radius: 0 0 0.5rem 0.5rem;
   padding: 0.5rem;
+  animation: subtit 4s;
+  animation-iteration-count: infinite;
 }
+@keyframes subtit {
+  0% {
+    background-color: rgb(75, 148, 225);
+  }
+  25% {
+    background-color: rgb(252, 252, 107);
+  }
+  50% {
+    background-color: rgb(236, 105, 105);
+  }
+  100% {
+    background-color: rgb(113, 207, 113);
+  }
+}
+
 aside {
   display: inline-block;
   vertical-align: top;
+  animation: rotar 6s;
+  animation-iteration-count: infinite;
 }
-
+@keyframes rotar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 article {
   display: inline-block;
 }
@@ -71,6 +97,7 @@ nav {
   right: 10px;
   margin-top: -30px;
 }
+
 .self {
   background-color: rgb(233, 163, 163);
   color: rgb(227, 244, 202);
@@ -88,10 +115,9 @@ nav a {
   font-weight: bolder;
   padding-top: 0.5rem;
 }
-
-a:hover {
-  background-color: rgb(233, 163, 163);
-  color: rgb(255, 255, 255);
+nav > a:hover {
+  transition: linear 1s;
+  transform: scale(1.2, 1.2);
 }
 
 a:active {
@@ -146,16 +172,7 @@ div p {
 }
 
 section:hover {
+  transition: linear 1s;
+  transform: rotate(5deg);
   background-color: orange;
-}
-
-footer {
-  background-color: black;
-  height: 5vh;
-  padding: 1.5rem;
-}
-
-footer p {
-  color: white;
-  text-align: center;
 }
