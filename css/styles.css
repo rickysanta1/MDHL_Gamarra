@@ -7,52 +7,60 @@
 body {
   background-color: rgba(236, 73, 73, 0.718);
 }
+
 .container {
-  width: 100%;
+  margin: 0 0.5rem;
+
   display: flex;
   gap: 0.3rem;
   justify-content: space-between;
   background-image: url("/assets/hockey_1.jpg");
+  border-radius: 0.5rem;
+
   background-position: cover;
   min-height: 100vh;
   padding-top: 1.5rem;
 }
 .container_contact {
-  width: 100%;
+  margin: 0 0.5rem;
   display: flex;
   justify-content: space-between;
   min-height: 100vh;
   background-image: url("/assets/hockey_3.jpg");
+  border-radius: 0.5rem;
   background-size: cover;
   padding-top: 1.5rem;
 }
 
 .container_about {
-  width: 100%;
+  margin: 0 0.5rem;
   display: flex;
   background-image: url("/assets/hockey_2.jpg");
+  border-radius: 0.5rem;
   background-size: cover;
   min-height: 100vh;
-  justify-content: space-between;
   padding-top: 1.5rem;
 }
 .about {
-  margin: 0 0 3rem 2rem;
+  margin: 0 0.5rem 3rem 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgba(236, 73, 73, 0.718);
+  border: 0.1rem solid rgb(230, 18, 18);
   border-radius: 1rem;
   box-shadow: 5px 5px rgba(0, 0, 0, 0.358);
   width: 100%;
   padding: 1rem;
 }
 .contact {
-  margin: 0 0 1.5rem 2rem;
+  margin: 0 0.5rem 1.5rem 2rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: rgb(236, 73, 73, 0.718);
+  border: 0.1rem solid rgb(230, 18, 18);
   border-radius: 1rem;
   box-shadow: 5px 5px rgba(0, 0, 0, 0.358);
   width: 100%;
@@ -69,22 +77,23 @@ body {
   padding: 0.5rem;
   animation: subtit 4s;
   animation-iteration-count: infinite;
+  margin: 0 0.5rem;
 }
 .subtitle p {
   color: black;
 }
 @keyframes subtit {
   0% {
-    background-color: rgb(75, 148, 225);
+    background-color: rgb(75, 148, 225, 0.718);
   }
   25% {
-    background-color: rgb(252, 252, 107);
+    background-color: rgb(252, 252, 107, 0.718);
   }
   50% {
-    background-color: rgb(236, 105, 105);
+    background-color: rgb(236, 105, 105, 0.718);
   }
   100% {
-    background-color: rgb(113, 207, 113);
+    background-color: rgb(113, 207, 113, 0.718);
   }
 }
 
@@ -96,6 +105,7 @@ aside {
   border-radius: 1rem;
   height: fit-content;
   align-content: flex-start;
+  margin-left: 0.5rem;
   /*   animation: rotar 6s;
   animation-iteration-count: infinite; */
 }
@@ -110,11 +120,12 @@ aside {
 
 header {
   margin-top: 3rem;
+  margin: 3rem 0.5rem 0;
   display: flex;
-  border: 0.5rem solid rgb(236, 73, 73);
+  border: 0.3rem solid rgb(236, 73, 73);
   border-style: ridge;
   border-radius: 0.5rem 0.5rem 0 0;
-  min-height: 50vh;
+  min-height: 35vh;
   padding: 1rem;
   background-image: url(/assets/design2_image1.jpg);
   background-size: cover;
@@ -135,7 +146,10 @@ nav {
   padding: 0.5rem;
   position: absolute;
   right: 10px;
-  margin-top: -50px;
+  margin-top: -47px;
+  display: flex;
+  gap: 0.3rem;
+  font-size: 0.8rem;
 }
 
 .self {
@@ -143,20 +157,19 @@ nav {
   color: rgb(227, 244, 202);
 }
 nav a {
-  display: inline-block;
-  width: 8rem;
-  height: 3rem;
+  width: 6rem;
+  height: 2rem;
   color: greenyellow;
   background-color: rgb(236, 73, 73);
   text-decoration: none;
   border-radius: 0.5rem;
-  border: 0.2rem solid rgb(230, 18, 18);
+  border: 0.1rem solid rgb(230, 18, 18);
   text-align: center;
   font-weight: bolder;
-  padding-top: 0.5rem;
+  padding-top: 0.3rem;
 }
 nav > a:hover {
-  transition: linear 1s;
+  transition: linear 0.7s;
   transform: scale(1.2, 1.2);
 }
 
@@ -178,12 +191,12 @@ h3 {
 
 section {
   vertical-align: top;
-  background-color: rgb(236, 73, 73);
+  background-color: rgb(236, 73, 73, 0.718);
   width: 300px;
   height: 200px;
   border-radius: 1rem;
   box-shadow: 5px 5px rgba(0, 0, 0, 0.358);
-  margin: 0 0 1.5rem 2rem;
+  margin: 0 0.5rem 1.5rem 2rem;
   padding: 0.4rem;
 }
 
