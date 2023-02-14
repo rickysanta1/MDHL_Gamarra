@@ -5,28 +5,59 @@
   font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 body {
-  background-color: rgb(209, 175, 226);
+  background-color: rgba(236, 73, 73, 0.718);
 }
 .container {
   width: 100%;
-  display: inline-block;
+  display: flex;
+  gap: 0.3rem;
+  justify-content: space-between;
   background-image: url("/assets/hockey_1.jpg");
   background-position: cover;
   min-height: 100vh;
+  padding-top: 1.5rem;
 }
 .container_contact {
   width: 100%;
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  min-height: 100vh;
   background-image: url("/assets/hockey_3.jpg");
   background-size: cover;
-  min-height: 100vh;
+  padding-top: 1.5rem;
 }
+
 .container_about {
   width: 100%;
-  display: inline-block;
+  display: flex;
   background-image: url("/assets/hockey_2.jpg");
   background-size: cover;
   min-height: 100vh;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+}
+.about {
+  margin: 0 0 3rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(236, 73, 73, 0.718);
+  border-radius: 1rem;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.358);
+  width: 100%;
+  padding: 1rem;
+}
+.contact {
+  margin: 0 0 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(236, 73, 73, 0.718);
+  border-radius: 1rem;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.358);
+  width: 100%;
+  height: 6rem;
+  padding: 1rem;
 }
 .subtitle {
   text-align: center;
@@ -38,6 +69,9 @@ body {
   padding: 0.5rem;
   animation: subtit 4s;
   animation-iteration-count: infinite;
+}
+.subtitle p {
+  color: black;
 }
 @keyframes subtit {
   0% {
@@ -55,10 +89,15 @@ body {
 }
 
 aside {
-  display: inline-block;
+  background-color: rgba(19, 17, 15, 0.456);
   vertical-align: top;
-  animation: rotar 6s;
-  animation-iteration-count: infinite;
+  border: solid rgb(236, 73, 73);
+  border-style: ridge;
+  border-radius: 1rem;
+  height: fit-content;
+  align-content: flex-start;
+  /*   animation: rotar 6s;
+  animation-iteration-count: infinite; */
 }
 @keyframes rotar {
   from {
@@ -68,11 +107,10 @@ aside {
     transform: rotate(360deg);
   }
 }
-article {
-  display: inline-block;
-}
 
-header > div {
+header {
+  margin-top: 3rem;
+  display: flex;
   border: 0.5rem solid rgb(236, 73, 73);
   border-style: ridge;
   border-radius: 0.5rem 0.5rem 0 0;
@@ -87,7 +125,8 @@ h1 {
   vertical-align: top;
   font-size: 2rem;
   text-align: left;
-  margin: 1rem 0 0 2rem;
+  margin-top: -70px;
+  text-shadow: 3px 3px rgba(232, 223, 223, 0.489);
 }
 
 nav {
@@ -96,7 +135,7 @@ nav {
   padding: 0.5rem;
   position: absolute;
   right: 10px;
-  margin-top: 15px;
+  margin-top: -50px;
 }
 
 .self {
@@ -127,53 +166,64 @@ a:active {
 
 main {
   min-height: 80vh;
-  padding: 0.5rem;
+  padding: 0.2rem;
 }
 
 article h2,
 h3 {
   color: greenyellow;
   margin: 1rem 0 0.5rem 0;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.489);
 }
-.about {
-  margin-left: 2rem;
-  vertical-align: top;
-  display: inline-block;
-  background-color: rgb(236, 73, 73);
-  border-radius: 1rem;
-  box-shadow: 5px 5px rgba(0, 0, 0, 0.358);
 
-  width: 80%;
-  padding: 1rem;
-}
-.contact {
-  margin: 2rem 0 1.5rem 2rem;
-  vertical-align: top;
-  display: inline-block;
-  background-color: rgb(236, 73, 73);
-  border-radius: 1rem;
-  box-shadow: 5px 5px rgba(0, 0, 0, 0.358);
-  width: 80vh;
-  padding: 1rem;
-}
 section {
   vertical-align: top;
-  display: inline-block;
   background-color: rgb(236, 73, 73);
   width: 300px;
   height: 200px;
   border-radius: 1rem;
   box-shadow: 5px 5px rgba(0, 0, 0, 0.358);
-  margin: 2rem 0 1.5rem 2rem;
+  margin: 0 0 1.5rem 2rem;
   padding: 0.4rem;
 }
 
 div p {
   color: azure;
+  text-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.489);
+}
+
+div ol,
+ul {
+  margin-left: 1rem;
+  color: azure;
+  text-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.489);
+}
+div li {
+  margin-bottom: 1rem;
+}
+#sin_punto li {
+  margin: 0;
+  list-style-type: lower-latin;
 }
 
 section:hover {
   transition: linear 1s;
   transform: rotate(5deg);
   background-color: orange;
+}
+
+#contact {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+#fac,
+#add {
+  margin: 1rem 0 1.5rem 0;
+}
+table {
+  width: 80%;
+  text-align: left;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px rgba(242, 236, 196, 0.489);
 }
