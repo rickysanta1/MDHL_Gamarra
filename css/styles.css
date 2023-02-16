@@ -10,13 +10,11 @@ body {
 
 .container {
   margin: 0 0.5rem;
-
   display: flex;
   gap: 0.3rem;
   justify-content: space-between;
-  background-image: url("/assets/hockey_1.jpg");
+  background-image: url(../assets/hockey_1.jpg);
   border-radius: 0.5rem;
-
   background-position: cover;
   min-height: 100vh;
   padding-top: 1.5rem;
@@ -26,7 +24,7 @@ body {
   display: flex;
   justify-content: space-between;
   min-height: 100vh;
-  background-image: url("/assets/hockey_3.jpg");
+  background-image: url("../assets/hockey_3.jpg");
   border-radius: 0.5rem;
   background-size: cover;
   padding-top: 1.5rem;
@@ -35,7 +33,7 @@ body {
 .container_about {
   margin: 0 0.5rem;
   display: flex;
-  background-image: url("/assets/hockey_2.jpg");
+  background-image: url("../assets/hockey_2.jpg");
   border-radius: 0.5rem;
   background-size: cover;
   min-height: 100vh;
@@ -127,7 +125,7 @@ header {
   border-radius: 0.5rem 0.5rem 0 0;
   min-height: 35vh;
   padding: 1rem;
-  background-image: url(/assets/design2_image1.jpg);
+  background-image: url(../assets/design2_image1.jpg);
   background-size: cover;
   background-position: 0% 30%;
 }
