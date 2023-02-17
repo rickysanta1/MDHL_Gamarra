@@ -1,8 +1,11 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 body {
@@ -129,8 +132,7 @@ aside {
 }
 
 header {
-  margin-top: 3rem;
-  margin: 3rem 0.5rem 0;
+  margin: 5rem 0.5rem 0 0.5rem;
   display: flex;
   border: 0.3rem solid rgb(236, 73, 73);
   border-style: ridge;
@@ -146,8 +148,8 @@ h1 {
   vertical-align: top;
   font-size: 2rem;
   text-align: left;
-  margin-top: -70px;
-  text-shadow: 3px 3px rgba(232, 223, 223, 0.489);
+  margin-top: -90px;
+  text-shadow: 3px 2px rgba(232, 223, 223, 0.489);
 }
 
 nav {
@@ -180,7 +182,7 @@ nav a {
   padding-top: 0.3rem;
 }
 
-nav > a:hover {
+nav>a:hover {
   transition: linear 0.7s;
   transform: scale(1.2, 1.2);
 }
@@ -198,7 +200,7 @@ article h2,
 h3 {
   color: greenyellow;
   margin: 1rem 0 0.5rem 0;
-  text-shadow: 3px 3px rgba(0, 0, 0, 0.489);
+  text-shadow: 3px 2px rgba(0, 0, 0, 0.489);
 }
 
 section {
@@ -255,21 +257,27 @@ td {
   border: 0.1rem solid rgb(145, 62, 62);
   padding: 0.3rem;
 }
+
 tr:nth-child(even) {
   background-color: rgba(137, 43, 226, 0.431);
 }
+
 tr:nth-child(odd) {
   background-color: rgba(172, 127, 213, 0.431);
 }
+
 tr:hover {
   background-color: rgba(165, 62, 62, 0.496);
 }
+
 thead {
   background-color: rgb(234, 134, 201);
 }
+
 .map {
   text-align: center;
 }
+
 table {
   border-collapse: collapse;
   color: bisque;
@@ -277,6 +285,10 @@ table {
   text-align: left;
   margin-bottom: 2rem;
   text-shadow: 2px 2px rgba(48, 47, 37, 0.489);
+
+  @media (max-width: 660px) {
+    width: 70%;
+  }
 }
 
 .maps_icon {
@@ -289,6 +301,7 @@ table {
   justify-content: center;
   align-items: center;
 }
+
 .mapas iframe {
   width: 400px;
   height: 300px;
@@ -299,6 +312,7 @@ table {
   margin: 0 0.5rem 1.5rem 2rem;
   padding: 0.4rem;
 }
+
 form {
   width: 100%;
   margin: 0 0.5rem 3rem 1rem;
@@ -324,13 +338,16 @@ form {
   border: none;
   width: 50%;
 }
+
 #select {
   width: 25%;
 }
+
 #date,
 #zip {
   width: 90%;
 }
+
 fieldset {
   padding: 6px 10px;
   display: flex;
@@ -345,6 +362,7 @@ legend {
   padding: 0.5rem;
   font-size: 1.1rem;
 }
+
 input[type="submit"] {
   background-color: #ff3f38;
   color: white;
@@ -359,35 +377,48 @@ input[type="submit"] {
 label {
   margin: 0 0.3rem 0.3rem 0;
 }
+
 label span {
   color: rgb(166, 198, 217);
 }
+
 .personal label {
   display: flex;
   flex-direction: column;
 }
+
 .label_flex {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-@media (max-width: 660px) {
+
+@media (max-width: 760px) {
+
   #date2,
   #select,
   .input_styles {
     width: 100%;
   }
-  h1 {
-    font-size: 1.3rem;
-    text-align: center;
+
+  header {
+    margin: 3rem 0.5rem 0 0.5rem;
   }
+
+  h1 {
+    margin-top: -60px;
+    font-size: 1.3rem;
+    margin-left: 4.5rem;
+  }
+
   nav {
     margin-top: -17px;
     flex-wrap: wrap;
     justify-content: center;
     font-size: 0.8rem;
   }
+
   .container_contact,
   .container {
     margin: 0.2rem;
