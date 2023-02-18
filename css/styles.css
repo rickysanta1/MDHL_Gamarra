@@ -286,9 +286,6 @@ table {
   margin-bottom: 2rem;
   text-shadow: 2px 2px rgba(48, 47, 37, 0.489);
 
-  @media (max-width: 660px) {
-    width: 70%;
-  }
 }
 
 .maps_icon {
@@ -407,18 +404,25 @@ label span {
   }
 
   .mapas iframe {
-    width: 300px;
-    height: 200px;
+    width: 250px;
+    height: 150px;
   }
 
   h1 {
     margin-top: -60px;
-    font-size: 1.3rem;
-    margin-left: 4.5rem;
+    font-size: medium;
+    margin-left: 5.5rem;
+  }
+
+  .subtitle {
+    font-size: xx-small;
   }
 
   table {
+    font-size: x-small;
     width: 80%;
+    margin-left: 2rem;
+    ;
   }
 
   nav {
@@ -434,5 +438,14 @@ label span {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+  }
+
+  .contact {
+    width: 80%;
+    align-content: flex-end;
+  }
+
+  article p {
+    font-size: small;
   }
 }
